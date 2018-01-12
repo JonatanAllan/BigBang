@@ -22,7 +22,7 @@ namespace BigBang.Infra
 
             // Infra
             services.AddScoped<IPersonagemRepositorio, PersonagemRepositorio>();
-            services.AddScoped<BigBangContexto>();
+            services.AddScoped<BigBangContextoSql>();
         }
     }
 }

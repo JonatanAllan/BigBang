@@ -3,7 +3,7 @@ using RecursosCompartilhados.Dominio.Interfaces.Repositorios;
 
 namespace BigBang.Dominio.Interfaces.Repositorios
 {
-    public interface IPersonagemRepositorio : IBaseRepositorio<Personagem>
+    public interface IPersonagemRepositorioSql : IBaseRepositorio<Personagem>
     {
          
     }

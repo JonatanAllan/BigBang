@@ -10,8 +10,8 @@ using System;
 
 namespace BigBang.Dados.Migrations
 {
-    [DbContext(typeof(BigBangContexto))]
-    partial class BigBangContextoModelSnapshot : ModelSnapshot
+    [DbContext(typeof(BigBangContextoSql))]
+    partial class BigBangContextoSqlModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

@@ -5,11 +5,21 @@ using RecursosCompartilhados.Dominio.Servicos;
 
 namespace BigBang.Dominio.Servicos
 {
-    public class PersonagemServicos : BaseServicos<Personagem>, IPersonagemServicos
+    /*public class PersonagemServicos : BaseServicos<Personagem>, IPersonagemServicos
     {
-        private readonly IPersonagemRepositorio _repositorio;
+        private readonly IPersonagemRepositorioSql _repositorio;
 
-        public PersonagemServicos(IPersonagemRepositorio repositorio) : base(repositorio)
+        public PersonagemServicos(IPersonagemRepositorioSql repositorio) : base(repositorio)
+        {
+            _repositorio = repositorio;
+        }
+    }*/
+
+    public class PersonagemServicos
+    {
+        private readonly IPersonagemRepositorioMongo _repositorio;
+
+        public PersonagemServicos(IPersonagemRepositorioMongo repositorio)
         {
             _repositorio = repositorio;
         }

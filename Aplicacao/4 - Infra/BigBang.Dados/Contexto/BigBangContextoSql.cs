@@ -7,7 +7,7 @@ using RecursosCompartilhados.Dados.Contexto;
 
 namespace BigBang.Dados.Contexto
 {
-    public class BigBangContexto : BaseContexto
+    public class BigBangContextoSql : BaseContexto
     {
         public DbSet<Personagem> Personagens { get; set; }
 

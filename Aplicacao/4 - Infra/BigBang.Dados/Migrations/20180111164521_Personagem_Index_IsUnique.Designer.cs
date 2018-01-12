@@ -10,7 +10,7 @@ using System;
 
 namespace BigBang.Dados.Migrations
 {
-    [DbContext(typeof(BigBangContexto))]
+    [DbContext(typeof(BigBangContextoSql))]
     [Migration("20180111164521_Personagem_Index_IsUnique")]
     partial class Personagem_Index_IsUnique
     {

@@ -8,7 +8,7 @@ using RecursosCompartilhados.Dominio.Interfaces;
 
 namespace BigBang.Dados.Repositorios
 {
-    public class PersonagemRepositorio : BaseRepositorio<Personagem, BigBangContexto>, IPersonagemRepositorio
+    public class PersonagemRepositorioSql : BaseRepositorio<Personagem, BigBangContextoSql>, IPersonagemRepositorioSql
     {
     }
 }

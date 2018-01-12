@@ -47,6 +47,10 @@ namespace BigBang.WebApi
                 });
             });
 
+            BigBangContextoMongo.ConnectionString = Configuration.GetSection("MongoConnection:ConnectionString").Value;
+            BigBangContextoMongo.DatabaseName = Configuration.GetSection("MongoConnection:DatabaseName").Value;
+            BigBangContextoMongo.IsSSL = Convert.ToBoolean(Configuration.GetSection("MongoConnection:IsSSL").Value);
+
             services.AddMvc();
 
             RegisterServices(services);

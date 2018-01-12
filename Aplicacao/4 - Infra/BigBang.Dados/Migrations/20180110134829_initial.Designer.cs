@@ -10,7 +10,7 @@ using System;
 
 namespace BigBang.Dados.Migrations
 {
-    [DbContext(typeof(BigBangContexto))]
+    [DbContext(typeof(BigBangContextoSql))]
     [Migration("20180110134829_initial")]
     partial class initial
     {
